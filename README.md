@@ -61,11 +61,32 @@ Files were stored and accessed using Unity Catalog Volumes in Databricks.
 
 ---
 
+## 📊 Evaluation Metrics
+- **Recall@K**: Measures how many relevant items were recommended
+- **Precision@K**: Measures how many recommended items were relevant
+- Metrics calculated using a sampled hold-out set
+- Provides insight into recommendation accuracy
+
+---
+
+## 🧩 Personalization Features
+- Joined `item_id` back to product metadata to display readable names
+- Potential to filter recommendations by household age group or brand preferences
+- Can extend to include campaign-based targeting or promotional uplift
+
+---
+
+## 📊 Streamlit + Power BI Dashboards
+- Built a simple dashboard in Streamlit to display recommendations
+- Power BI dashboard connected to Delta tables for interactive filtering
+- Visualizations include: Top brands, weekly trends, and personalized product cards
+
+---
+
 ## 📈 Next Steps
-- Join `item_id` with `product.csv` to get product names
-- Visualize top-N recommendations by brand/category
-- Evaluate model performance (Recall@k, NDCG)
-- Optional: Serve via Databricks Job API or Streamlit
+- Expand evaluation to include coverage, diversity, and novelty
+- Deploy recommendations API with real-time scoring
+- Integrate with customer segmentation and loyalty tiers
 
 ---
 
@@ -74,6 +95,7 @@ Files were stored and accessed using Unity Catalog Volumes in Databricks.
 - PySpark (SQL, MLlib, Delta Lake)
 - Spark ML ALS
 - Delta Tables for intermediate outputs
+- Streamlit, Power BI for visualization
 
 ---
 
@@ -81,3 +103,4 @@ Files were stored and accessed using Unity Catalog Volumes in Databricks.
 **Devsen Datha Mukkamala**  
 Senior Software Engineer / Data Scientist  
 [LinkedIn](https://www.linkedin.com/in/devsendatham) | [Portfolio](https://www.devsendatham.com)
+
